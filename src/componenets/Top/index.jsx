@@ -150,7 +150,7 @@ export default class Top extends Component {
                         </div>
                     </div>
 
-                    <div className={"header_bottom " + (url ? ' ' : ' height')}>
+                    <div className={"header_bottom " + (url ? ' ' : ' None')}>
                         {
                             navList.map((item, index) => {
                                 return this.headerNav(item, index)
