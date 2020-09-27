@@ -5,11 +5,15 @@
         width: 100%;
         text-align: center;
         height: 285px;
+        border-bottom: 1px solid #eee;
 
         .banner {
             width: 100%;
             height: 285px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             .banner_bg {
                 position: absolute;
@@ -22,10 +26,71 @@
             }
 
             .slick-slider {
-                width: 800px;
-                margin: 0 auto;
+                width: 730px;
                 height: 285px;
             }
+
+            .null {
+                width: 250px;
+                height: 285px;
+                border: 1px solid #000;
+            }
+        }
+    }
+
+    .find_main {
+        width: 980px;
+        min-height: 700px;
+        border: 1px solid #d3d3d3;
+        border-width: 0 1px;
+        margin: 0 auto;
+        background-color: #fff;
+
+        .find_main_left {
+            padding: 20px 20px 40px;
+            display: flex;
+
+            .find_main_left_hd {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                border-bottom: 2px solid #C10D0C;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .find_main_left_hd_left {
+                    display: flex;
+                    align-items: center;
+
+                    .find_main_left_hd_title {
+                        font-size: 20px;
+                        font-weight: normal;
+                        cursor: pointer;
+
+                        .icon {
+                            font-size: 20px;
+                            padding-right: 10px;
+                        }
+                    }
+
+                    .find_main_left_hd_list {
+                        display: flex;
+                        margin-left: 20px;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+
+                .find_main_left_hd_right {
+                    cursor: pointer;
+                }
+
+
+            }
+
+
         }
     }
 }

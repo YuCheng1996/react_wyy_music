@@ -28,6 +28,18 @@ export default class componentName extends Component {
         })
     }
 
+
+    nextArrowBtn = () => {
+        const { className, style, onClick } = this.props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "green" }}
+                onClick={onClick}
+            />
+        );
+    }
+
     render() {
 
         const settings = {
@@ -37,8 +49,10 @@ export default class componentName extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 20000,
-            cssEase: "linear"
+            autoplaySpeed: 2000,
+            cssEase: "linear",
+            arrows: false,
+            fade: true,
         };
         let { bannerList, backgroundImg } = this.state
 
@@ -46,7 +60,9 @@ export default class componentName extends Component {
             <div>
                 {/* 头部轮播图 */}
                 <div className="header" >
+
                     <div className="banner" >
+
                         <div className="banner_bg" style={{
                             'backgroundImage': `url('${backgroundImg}')`
                         }}>
@@ -67,6 +83,10 @@ export default class componentName extends Component {
                                 })
                             }
                         </Slider>
+
+                        <div className="null">
+
+                        </div>
                     </div>
                 </div>
             </div>
