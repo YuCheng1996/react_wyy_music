@@ -11,6 +11,7 @@ import My from "@/views/My/index"
 import Friend from "@/views/Friend/index"
 import Find from "@/views/Find/index"
 import NotFound from "@/views/NotFound/index"
+
 export default class Content extends Component {
 
     render() {
